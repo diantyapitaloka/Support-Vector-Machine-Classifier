@@ -85,6 +85,7 @@ Call the fit function to train the model
 
 ## Prediction Accuracy
 Finally, we can see how accurate the predictions of the model we trained are on the testing data.
+![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/faa34831-a093-4e7a-a512-6ca6525ff903)
 
 ## Displays Prediction Accuracy Score
 Successfully developed a Support Vector Classifier model to detect diabetes.
