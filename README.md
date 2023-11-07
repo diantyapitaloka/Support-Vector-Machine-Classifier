@@ -49,49 +49,69 @@ df = pd.read_csv('diabetes.csv')
 
 ## 🌷🌼🌻 Display Row 🌻🌼🌷
 Then we display the top 5 rows of the dataframe to see the contents of the dataset. To do this we can run the df.head() code as below.
-- df.head()
+```
+df.head()
+```
 
 ## 🌷🌼🌻 Check Missing Value 🌻🌼🌷
 The next most important thing is that we need to check whether there are missing values in the dataset and whether there are attributes that do not contain numeric numbers. We can do this by calling the .info() function on the dataframe.
-- df.info()
+```
+df.info()
+```
 
 ## 🌷🌼🌻 Separating Attributes 🌻🌼🌷
 The output from the info() function shows that all attribute values are complete, and also the values of each column have numeric data types, namely int64 and float64. At this stage the data can be used for model training.
 
 Separating attributes in a dataset and storing them in a variable
-- X = df[df.columns[:8]]
+```
+X = df[df.columns[:8]]
+```
  
 Separating the labels in the dataset and storing them in a variable
-- Y = df['Outcome']
+```
+Y = df['Outcome']
+```
 
 ## 🌷🌼🌻 Standardize Values from Dataset 🌻🌼🌷
 If we look, the values in the dataset have different scales. For example, in the Glucose column and the Diabetes Pedigree Function column. We need to change the values of each attribute to be on the same scale. We can try to use standardization with the StandardScaler() function from SKLearn.
-- from sklearn.preprocessing import StandardScaler
-- scaler = StandardScaler()
-- scaler.fit(X)
-- X = scaler.transform(X)
+```
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+scaler.fit(X)
+X = scaler.transform(X)
+```
 
 ## 🌷🌼🌻 Testing Attributes 🌻🌼🌷
 After the attributes and labels are separated, we can separate the data for training and testing using the .train_test_split() function.
-- from sklearn.model_selection import train_test_split
-- X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+```
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+```
 
 ## 🌷🌼🌻 Support Vector Classifier object 🌻🌼🌷
 We then create a Support Vector Classifier object and store it in the clf variable. Finally we arrive at the stage we have been waiting for, we call the fit function to train the model.
-- from sklearn.svm import SVC
+```
+from sklearn.svm import SVC
+```
  
 ## 🌷🌼🌻 Create an SVC object 🌻🌼🌷
 Call the fit function to train the model
-- clf = SVC()
-- clf.fit(X_train, y_train)
+```
+clf = SVC()
+clf.fit(X_train, y_train)
+```
 
 ## 🌷🌼🌻 Prediction Accuracy 🌻🌼🌷
 Finally, we can see how accurate the predictions of the model we trained are on the testing data.
+
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/faa34831-a093-4e7a-a512-6ca6525ff903)
 
 ## 🌷🌼🌻 Displays Prediction Accuracy Score 🌻🌼🌷
 Successfully developed a Support Vector Classifier model to detect diabetes.
-- clf.score(X_test, y_test)
+```
+clf.score(X_test, y_test)
+```
+
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/a230278b-fcbc-431f-b98b-1d0bc2758e20)
 
 
