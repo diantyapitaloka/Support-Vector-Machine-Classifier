@@ -42,8 +42,10 @@ Decision boundary is a line that divides a road or margin into 2 equal parts. Th
 
 ## 🌷🌼🌻 Purpose Machine Learning Model 🌻🌼🌷
 The machine learning model that we will create aims to classify whether a patient is positive for diabetes or not. In the next stage we will import the pandas library and convert the dataset into a dataframe. Then, import the pandas library and convert the CSV file into a dataframe with the following code.
-- import pandas as pd
-- df = pd.read_csv('diabetes.csv')
+```
+import pandas as pd
+df = pd.read_csv('diabetes.csv')
+```
 
 ## 🌷🌼🌻 Display Row 🌻🌼🌷
 Then we display the top 5 rows of the dataframe to see the contents of the dataset. To do this we can run the df.head() code as below.
