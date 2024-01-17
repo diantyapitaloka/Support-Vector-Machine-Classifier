@@ -1,21 +1,31 @@
 ## 🌷🌼🌻 Support Vector Machine Classifier 🌻🌼🌷
-Developed a model that was able to differentiate between chickens and pythons so that they could place the two animals in different cages. We certainly don't want to put chickens and snakes together in the same cage.
+- Developed a model that was able to differentiate between chickens and pythons so that they could place the two animals in different cages. 
+- We certainly don't want to put chickens and snakes together in the same cage.
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/efc67d17-ee6f-4a60-add8-b80e5b6566fe)
 
-We can create a classification model that separates the two classes using a Support Vector Machine. According to Aurelien Geron in the book Hands on Machine Learning, SVM works by creating a decision boundary or a field that is able to separate two classes. In this problem the decision boundary that is able to separate the chicken class and the snake class is a straight line which can be seen in the picture.
+- We can create a classification model that separates the two classes using a Support Vector Machine.
+- According to Aurelien Geron in the book Hands on Machine Learning, SVM works by creating a decision boundary or a field that is able to separate two classes.
+- In this problem the decision boundary that is able to separate the chicken class and the snake class is a straight line which can be seen in the picture.
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/209c764a-2384-43d5-b079-1037baf2d19b)
 
-Returning to the case of chicken and snake classification, the chicken and snake samples in the red circle are support vectors. Then we look for the widest path of the 2 support vectors. After finding the widest road, a decision boundary is then drawn based on that road.
+- Returning to the case of chicken and snake classification, the chicken and snake samples in the red circle are support vectors.
+- Then we look for the widest path of the 2 support vectors.
+- After finding the widest road, a decision boundary is then drawn based on that road.
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/6ce86813-dc12-48bc-9527-fc557edbf5e6)
 
 ## 🌷🌼🌻 Support Vector Machine Non-Linear Classification 🌻🌼🌷
-Previously we learned about the support vector classifier for the linear case. Support vector classifier works by looking for the largest margin, or the widest path that is able to separate 2 classes. The problem is, the data in the field is much more complex than the data on ornamental chickens and snakes as above.
+- Previously we learned about the support vector classifier for the linear case.
+- Support vector classifier works by looking for the largest margin, or the widest path that is able to separate 2 classes.
+- The problem is, the data in the field is much more complex than the data on ornamental chickens and snakes as above.
 
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/5745dee1-39fd-4695-aee7-4a75121540c9)
 
-The data above is data that cannot be separated linearly, so we call it non-linear data. In non-linear data, the decision boundary calculated by the SVM algorithm is not a straight line. Even though it is quite complicated to determine the decision boundary in this case, we also get the advantage, namely, we can capture more complex relationships from each scattered data point.
+- The data above is data that cannot be separated linearly, so we call it non-linear data.
+- In non-linear data, the decision boundary calculated by the SVM algorithm is not a straight line. Even though it is quite complicated to determine the decision boundary in this case, we also get the advantage, namely, we can capture more complex relationships from each scattered data point.
 
-For data like above, the Support Vector Classifier uses a method, namely the "kernel trick" so that the data can be separated linearly. What are kernel tricks? It is a method for converting data in certain dimensions (eg 2D) into higher dimensions (3D) so that it can produce an optimal hyperplane. Look at the following image.
+- For data like above, the Support Vector Classifier uses a method, namely the "kernel trick" so that the data can be separated linearly.
+- What are kernel tricks? It is a method for converting data in certain dimensions (eg 2D) into higher dimensions (3D) so that it can produce an optimal hyperplane.
+- Look at the following image.
 
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/f109e43b-6a06-4c6c-b0d7-7d088799b2eb)
 
