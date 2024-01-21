@@ -29,9 +29,13 @@
 
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/f109e43b-6a06-4c6c-b0d7-7d088799b2eb)
 
-First, we need to calculate the distance score of two data points, for example x_i and x_j. Scores will be higher for closer data points, and vice versa. Then we use this score to map the data in higher dimensions (3D). This technique is useful for reducing computing time and resources, especially for large amounts of data. This also prevents the need for a more complex transformation process. That's why this technique is often referred to as a kernel trick.
-
-As the image above shows, mapping data points from 2D to 3D space uses a kernel function. The red dots that were previously in the center are now in the vertical plane at a lower position after being converted to 3D space. Data points that were previously difficult to separate can now be easily separated using kernel techniques.
+- First, we need to calculate the distance score of two data points, for example x_i and x_j.
+- Scores will be higher for closer data points, and vice versa. Then we use this score to map the data in higher dimensions (3D).
+- This technique is useful for reducing computing time and resources, especially for large amounts of data.
+- This also prevents the need for a more complex transformation process. That's why this technique is often referred to as a kernel trick.
+- As the image above shows, mapping data points from 2D to 3D space uses a kernel function.
+- The red dots that were previously in the center are now in the vertical plane at a lower position after being converted to 3D space.
+- Data points that were previously difficult to separate can now be easily separated using kernel techniques.
 
 
 ## 🌷🌼🌻 Support Vector Machine Multi-class Classification 🌻🌼🌷
