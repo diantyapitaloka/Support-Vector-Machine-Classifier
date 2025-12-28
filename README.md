@@ -3,6 +3,7 @@
 - We certainly don't want to put chickens and snakes together in the same cage.
 - The decision boundary is a hyperplane that acts as a partition between different data categories, such as chickens and snakes. In a two-dimensional space, this boundary is a simple straight line that aims to leave as much room as possible between the two groups.
 - Support vectors are the specific data points located closest to the decision boundary, often represented by the "outliers" of each group. These points are critical because they are the only observations that actually determine the position and orientation of the separating line.
+- SVM is often called a "Large Margin Classifier" because it doesn't just find any line to separate classes; it looks for the widest possible "road." By maximizing the distance between the support vectors of each class, the model ensures it can generalize better to new animals it hasn't seen before.
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/efc67d17-ee6f-4a60-add8-b80e5b6566fe)
 
 - We can create a classification model that separates the two classes using a Support Vector Machine.
