@@ -6,17 +6,24 @@
 - SVM is often called a "Large Margin Classifier" because it doesn't just find any line to separate classes; it looks for the widest possible "road." By maximizing the distance between the support vectors of each class, the model ensures it can generalize better to new animals it hasn't seen before.
 - When data can be separated by a simple straight line, as in your chicken and snake example, it is known as Linear SVM. However, for more complex data that overlaps, SVM can use a "kernel trick" to map the data into higher dimensions where a clear boundary can be found.
 - Because the decision boundary is determined strictly by the support vectors, the model is generally not affected by other data points far away from the margin. This makes the SVM highly efficient and robust, as adding more chickens deep within the "chicken zone" won't change how the boundary is drawn.
+
+  
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/efc67d17-ee6f-4a60-add8-b80e5b6566fe)
 
 - We can create a classification model that separates the two classes using a Support Vector Machine.
 - According to Aurelien Geron in the book Hands on Machine Learning, SVM works by creating a decision boundary or a field that is able to separate two classes.
 - In this problem the decision boundary that is able to separate the chicken class and the snake class is a straight line which can be seen in the picture.
 - In a "Hard Margin" approach, the model strictly forbids any chickens from being on the snake side and vice versa, which only works if the data is perfectly separable. However, most real-world models use a "Soft Margin" that allows for a few misclassifications to create a more flexible and realistic boundary that isn't overly sensitive to a single stray data point.
+- If the chickens and snakes were mixed together in a way that a straight line couldn't separate them, the SVM would use a "Kernel" to transform the data into a higher dimension. This mathematical shortcut allows the model to find a clear separating plane in a 3D space even when the data looks messy and inseparable in a 2D view.
+
+  
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/209c764a-2384-43d5-b079-1037baf2d19b)
 
 - Returning to the case of chicken and snake classification, the chicken and snake samples in the red circle are support vectors.
 - Then we look for the widest path of the 2 support vectors.
 - After finding the widest road, a decision boundary is then drawn based on that road.
+
+  
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/6ce86813-dc12-48bc-9527-fc557edbf5e6)
 
 ## 🌷🌼🌻 Support Vector Machine Non-Linear Classification 🌻🌼🌷
