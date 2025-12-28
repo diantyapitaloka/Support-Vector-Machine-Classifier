@@ -11,6 +11,7 @@
 - We can create a classification model that separates the two classes using a Support Vector Machine.
 - According to Aurelien Geron in the book Hands on Machine Learning, SVM works by creating a decision boundary or a field that is able to separate two classes.
 - In this problem the decision boundary that is able to separate the chicken class and the snake class is a straight line which can be seen in the picture.
+- In a "Hard Margin" approach, the model strictly forbids any chickens from being on the snake side and vice versa, which only works if the data is perfectly separable. However, most real-world models use a "Soft Margin" that allows for a few misclassifications to create a more flexible and realistic boundary that isn't overly sensitive to a single stray data point.
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/209c764a-2384-43d5-b079-1037baf2d19b)
 
 - Returning to the case of chicken and snake classification, the chicken and snake samples in the red circle are support vectors.
