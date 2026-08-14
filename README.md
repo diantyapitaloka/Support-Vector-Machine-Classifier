@@ -7,6 +7,7 @@
 - When data can be separated by a simple straight line, as in your chicken and snake example, it is known as Linear SVM. However, this also for more complex data that overlaps, SVM can be used to a "kernel trick" to track map the data into higher dimensions where a clear boundary can be found.
 - Because the decision boundary is to determined strictly by the support vectors, the model is generally not affected by other data points like far away from the margin. This is will makes us to the SVM highly efficient and robust, as adding more chickens deep within the "chicken zone" won't change how the boundary is drawn.
 - Handling Noise & Overlap (Soft Margin Parameter $C$): Real-world animal measurements aren't always cleanly separated; a small python might weigh the same as a large chicken. SVM handles this overlap using a Soft Margin, controlled by a hyperparameter ($C$). This allows a few misclassified points inside the margin to avoid creating an overly complex or rigid boundary.
+- Extreme Sensitivity to Feature Scaling: SVM relies directly on calculating physical distance between data points. If python length is measured in millimeters (thousands) while chicken weight is in kilograms (single digits), the model will unfairly ignore weight unless all features are normalized to the same scale before training.
 
   
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/efc67d17-ee6f-4a60-add8-b80e5b6566fe)
