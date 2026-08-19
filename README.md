@@ -34,7 +34,7 @@
 
 ## 🌷🌼🌻 Support Vector Machine Non-Linear Classification 🌻🌼🌷
 - Previously we learned about the support vector classifier for the linear case.
-- Support vector classifier works by looking for the largest margin, or the widest path that is able to separate 2 classes.
+- Support vector classifier works by looking for the largest margin, or the widest path that is able to separate the 2 classes.
 - The problem is, the data in the field is much more complex than the data on ornamental chickens and snakes as above.
 
 ![image](https://github.com/diantyapitaloka/Support-Vector-Machine-Classifier/assets/147487436/5745dee1-39fd-4695-aee7-4a75121540c9)
