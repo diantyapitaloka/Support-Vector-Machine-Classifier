@@ -19,7 +19,7 @@
 - According to Aurelien Geron in the book Hands on Machine Learning, SVM works by creating a decision boundary or a field that is able to separate two classes.
 - In this problem the decision boundary that is able to separate the chicken class and the snake class is a straight line which can be seen in the picture.
 - In a "Hard Margin" approach, the model strictly forbids any chickens from being on the snake side and vice versa, which only works if the data is perfectly separable. However, most real-world models use a "Soft Margin" that allows for a few misclassifications to create a more flexible and realistic boundary that isn't overly sensitive to a single stray data point.
-- If the chickens and snakes were mixed together in a way that a straight line couldn't separate them, the SVM would use a "Kernel" to transform the data into a higher dimension. This mathematical shortcut allows the model to find a clear separating plane in a 3D space even when the data looks messy and inseparable in a 2D view.
+- If the chickens and snakes were mixed together in a way that a straight line couldn't separate them, the SVM would use a "Kernel" to transform the data into a higher dimension. This mathematical shortcut allow the model to find a clear separating plane in a 3D space even when the data looks messy and inseparable in a 2D view.
 - Memory-Efficient Deployment: Once the model is trained, it discards almost all the training data and only stores the handful of support vectors. This makes the trained classifier extremely lightweight, allowing it to run instantly on simple edge devices—like a smart camera mounted directly above the cage doors.
 
   
